@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="../jscript/app.js"> </script>   
+</head>
+<body onload="t_mobile()"> 
+    <header>
+        <div class="header_content">
+            <div class="first">
+                <div class="qualis_menu">
+                    <div class="menu1">
+                    <!-- <i class="material-icons">menu</i> -->
+                    <p style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</p>
+                    <span class="qualis">QUALIS</span>
+                    <div class="menu" id="menu1"> 
+                        <table>
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                           <a href="#">view your job</a>
+                            <a href="#">your intresrs</a>
+                            <a href="#">contribute to the site</a>
+                            <a href="#">jobs by category</a>
+                            <a href="#">about us</a>
+                            <a href="#">privacy policy</a>
+                        </table>
+                    </div>
+                     </div>  
+                </div>
+                <ul class="rect" id="btnlst">
+                <button onclick="myFunction()" id="id_1" class="Rectangle Rectangle_1 id_1">
+                    <i class="material-icons star_icon"  style="font-size:15px">find_in_page
+                        <span class="star">BROWSE</span>
+                    </i>
+                </button>
+                <button onclick="myFunction1()" id="id_2"class="Rectangle Rectangle_2 id_1">
+                    <i class="material-icons star_icon" style="font-size:15px">grade
+                        <span class=" star" >FAVOURITES</span>
+                    </i>
+                </button>
+                <button onclick="myFunction2()" id="id_3" class="Rectangle Rectangle_3 id_1">
+                    <i class="material-icons star_icon"  style="font-size:15px">add_circle_outline
+                        <span class="star">CREATE</span> 
+                    </i>
+                </button>
+            </ul>
+                <i style="font-size:24px" class="fa user">&#xf2bd;</i> 
+            </div>
+            <ul class="rect1">
+            <li class="Rectangle_4"><p class="rect_text">RECOMMENDED</p></li>
+            <li class="Rectangle_5"><p class="rect_text">FINANCE</p></li>
+            <li class="Rectangle_5"><p class="rect_text">MARKETING</p></li>
+            <li class="Rectangle_5"><p class="rect_text">SALES</p></li>
+            <li class="Rectangle_5"><p class="rect_text">CLOUD</p></li>
+            <li class="Rectangle_5"><p class="rect_text">...</p></li></ul>
+            <div class="search_bar">
+                <input type="text" placeholder="search" class="search">
+                <i class="fa fa-search"></i>
+                <i class="material-icons filter"> filter_list</i>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="section_content" >
+            <img  class="grid" src="..\assets\icon-grid-active.svg">
+           <span class="sect_head"> BASED ON LAST FEW JOBS YOU CREATED</span></img>
+            <div class="list_icon">
+            <i class="material-icons">list</i>
+        </div>
+        <ul class="box" id="structure">
+
+          <!-- <li class="Rectangle_sec">
+                <div class="inner_rect">
+                    <i class="material-icons star1">star_border</i>
+                    <p class="text1">FINANCE</p>
+                    <p class="idw_td">IDW_TD_TDL_SAM_SOC</p>
+                    <div class="out_div">
+                        <div class="Rectangle-s">
+                            <p class="ericson">Ericson</p>
+                        </div>
+                        <hr class="line">
+                        <div class="Rectangle-s1">
+                            <p class="ericson">Hive_Hadoop</p>
+                        </div>
+                    </div>
+                    <div class="line1">
+                            <p class="na248">NA248C83C</p>
+                            <p class="date">5/21/17</p>
+                    </div>
+                    <div class="line1">
+                            <p class="date">Type 1</p>
+                            <p class="date">09:21</p>
+                    </div>
+                    <div class="line1">
+                            <p class="date">Robert Stone</p>
+                            <div class="last_rect"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="Rectangle_sec">
+                <div class="inner_rect">
+                    <i class="material-icons star1">star_border</i>
+                    <p class="text1">FINANCE</p>
+                    <p class="idw_td">IDW_TD_TDL_SAM_SOC</p>
+                    <div class="out_div">
+                        <div class="Rectangle-s">
+                            <p class="ericson">Ericson</p>
+                        </div>
+                        <hr class="line">
+                        <div class="Rectangle-s1">
+                            <p class="ericson">Hive_Hadoop</p>
+                        </div>
+                    </div>
+                    <div class="line1">
+                            <p class="na248">NA248C83C</p>
+                            <p class="date">5/21/17</p>
+                    </div>
+                    <div class="line1">
+                            <p class="date">Type 1</p>
+                            <p class="date">09:21</p>
+                    </div>
+                    <div class="line1">
+                            <p class="date">Robert Stone</p>
+                            <div class="last_rect"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="Rectangle_sec">
+                <div class="inner_rect">
+                    <i class="material-icons star1">star_border</i>
+                    <p class="text1">FINANCE</p>
+                    <p class="idw_td">IDW_TD_TDL_SAM_SOC</p>
+                    <div class="out_div">
+                        <div class="Rectangle-s">
+                            <p class="ericson">Ericson</p>
+                        </div>
+                        <hr class="line">
+                        <div class="Rectangle-s1">
+                            <p class="ericson">Hive_Hadoop</p>
+                        </div>
+                    </div>
+                    <div class="line1">
+                            <p class="na248">NA248C83C</p>
+                            <p class="date">5/21/17</p>
+                    </div>
+                    <div class="line1">
+                            <p class="date">Type 1</p>
+                            <p class="date">09:21</p>
+                    </div>
+                    <div class="line1">
+                            <p class="date">Robert Stone</p>
+                            <div class="last_rect"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="Rectangle_sec">
+                <div class="inner_rect">
+                    <i class="material-icons star1">star_border</i>
+                    <p class="text1">FINANCE</p>
+                    <p class="idw_td">IDW_TD_TDL_SAM_SOC</p>
+                    <div class="out_div">
+                        <div class="Rectangle-s">
+                            <p class="ericson">Ericson</p>
+                        </div>
+                        <hr class="line">
+                        <div class="Rectangle-s1">
+                            <p class="ericson">Hive_Hadoop</p>
+                        </div>
+                    </div>
+                    <div class="line1">
+                            <p class="na248">NA248C83C</p>
+                            <p class="date">5/21/17</p>
+                    </div>
+                    <div class="line1">
+                            <p class="date">Type 1</p>
+                            <p class="date">09:21</p>
+                    </div>
+                    <div class="line1">
+                            <p class="date">Robert Stone</p>
+                            <div class="last_rect"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="Rectangle_sec">
+                <div class="inner_rect">
+                    <i class="material-icons star1">star_border</i>
+                    <p class="text1">FINANCE</p>
+                    <p class="idw_td">IDW_TD_TDL_SAM_SOC</p>
+                    <div class="out_div">
+                        <div class="Rectangle-s">
+                            <p class="ericson">Ericson</p>
+                        </div>
+                        <hr class="line">
+                        <div class="Rectangle-s1">
+                            <p class="ericson">Hive_Hadoop</p>
+                        </div>
+                    </div>
+                    <div class="line1">
+                            <p class="na248">NA248C83C</p>
+                            <p class="date">5/21/17</p>
+                    </div>
+                    <div class="line1">
+                            <p class="date">Type 1</p>
+                            <p class="date">09:21</p>
+                    </div>
+                    <div class="line1">
+                            <p class="date">Robert Stone</p>
+                            <div class="last_rect"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="Rectangle_sec">
+                <div class="inner_rect">
+                    <i class="material-icons star1">star_border</i>
+                    <p class="text1">FINANCE</p>
+                    <p class="idw_td">IDW_TD_TDL_SAM_SOC</p>
+                    <div class="out_div">
+                        <div class="Rectangle-s">
+                            <p class="ericson">Ericson</p>
+                        </div>
+                        <hr class="line">
+                        <div class="Rectangle-s1">
+                            <p class="ericson">Hive_Hadoop</p>
+                        </div>
+                    </div>
+                    <div class="line1">
+                            <p class="na248">NA248C83C</p>
+                            <p class="date">5/21/17</p>
+                    </div>
+                    <div class="line1">
+                            <p class="date">Type 1</p>
+                            <p class="date">09:21</p>
+                    </div>
+                    <div class="line1">
+                            <p class="date">Robert Stone</p>
+                            <div class="last_rect"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="Rectangle_sec">
+                <div class="inner_rect">
+                    <i class="material-icons star1">star_border</i>
+                    <p class="text1">FINANCE</p>
+                    <p class="idw_td">IDW_TD_TDL_SAM_SOC</p>
+                    <div class="out_div">
+                        <div class="Rectangle-s">
+                            <p class="ericson">Ericson</p>
+                        </div>
+                        <hr class="line">
+                        <div class="Rectangle-s1">
+                            <p class="ericson">Hive_Hadoop</p>
+                        </div>
+                    </div>
+                    <div class="line1">
+                            <p class="na248">NA248C83C</p>
+                            <p class="date">5/21/17</p>
+                    </div>
+                    <div class="line1">
+                            <p class="date">Type 1</p>
+                            <p class="date">09:21</p>
+                    </div>
+                    <div class="line1">
+                            <p class="date">Robert Stone</p>
+                            <div class="last_rect"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="Rectangle_sec">
+                <div class="inner_rect">
+                    <i class="material-icons star1">star_border</i>
+                    <p class="text1">FINANCE</p>
+                     <p class="idw_td">IDW_TD_TDL_SAM_SOC</p>
+                    <div class="out_div">
+                        <div class="Rectangle-s">
+                            <p class="ericson">Ericson</p>
+                        </div>
+                        <hr class="line">
+                        <div class="Rectangle-s1">
+                            <p class="ericson">Hive_Hadoop</p>
+                        </div>
+                    </div>
+                    <div class="line1">
+                            <p class="na248">NA248C83C</p>
+                            <p class="date">5/21/17</p>
+                    </div>
+                    <div class="line1">
+                            <p class="date">Type 1</p>
+                            <p class="date">09:21</p>
+                    </div>
+                    <div class="line1">
+                            <p class="date">Robert Stone</p>
+                            <div class="last_rect"></div>
+                    </div>
+                </div>
+            </li> -->
+        </ul>
+        </div>
+        
+        <div  class="sidenav" id="mySidenav">
+                <div id="push">
+      <!--  <div id="mySidenav">
+            
+             <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+
+            <hr class="pop">
+            <table>
+            <tr>
+              <td>Pipeline_Name:<span>pipeline</span></td>
+              <td>Source_System:<span>pipeline</span></td>
+              <td>Owner:<span>pipeline</span></td>
+            </tr>
+            <tr>
+              <td>Pipeline_Layer:<span>pipeline</span></td>
+              <td>Target_System:<span>pipeline</span></td>
+              <td>Source_Type<span>pipeline</span></td>
+            </tr>
+            <tr>
+              <td>Category:<span>pipeline</span></td>
+              <td>Date_Created:<span>pipeline</span></td>
+              <td>Target_Type:<span>pipeline</span></td>
+            </tr>
+          </table>
+        </div>  -->
+        </div>
+        </div>
+    </section>      
+</body>
